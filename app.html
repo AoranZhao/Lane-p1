@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Challenge Project #1" >
+	<meta name="author" content="Aoran Zhao" >
+	<title>Project #1</title>
+	<link rel="stylesheet" href="app.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/Sortable/1.4.2/Sortable.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+</head>
+<body ng-controller="myCtrl">
+	<div class="container">
+		<div class="imageArea">
+			<div class="imageZone">
+				<img id="img" src="" alt="" />
+			</div>
+
+			<div id="imgForm">
+				<form action="">
+					<input type="file" id="uploadedImage" onChange="readURL();" />
+				</form>
+			</div>
+		</div>
+		
+		<div class="dragArea">
+			<h2>Available Action</h2>
+			<ul id="items1" class="list-group">
+				<li ng-repeat="item in inavi_list" class="list-group-item" id="{{item.id}}"><p>{{item.name}}</p></li>
+			</ul>
+			<br />
+			<h2>Applied Actions</h2>
+			<ul id="items2" class="list-group">
+				<li ng-repeat="item in avi_list" class="list-group-item" id="{{item.id}}"><p>{{item.name}}</p></li>
+			</ul>
+			<button ng-click="reset()" class="btn_reset">Reset</button>
+		</div>
+		
+	</div>
+
+	<script src="./js/changer.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.imageArea {
+	float: left;
+	width: 500px;
+	height: 550px;
+}
+
+.imageZone {
+	background-color: #eee;
+	width: 500px;
+	height: 500px;
+}
+
+.imageZone img {
+	width: 300px;
+	height: 300px;
+	margin: 100px;
+}
+
+#imgForm {
+	width: 100%;
+}
+
+#imgForm input {
+	margin: 10px 0 0 50px;
+}
+
+.dragArea {
+	float: right;
+}
+
+.list-group-item {
+	cursor: move;
+	background-color: #eee;
+	border: 1px solid green;
+	border-radius: 5px;
+	display: block;
+	width: 230px;
+	height: 30px;
+	margin: 2px 0 3px -35px;
+}
+
+.list-group-item p {
+	margin: 0;
+	line-height: 30px;
+	text-align: center;
+	display: block;
+}
+
+.list-group {
+	list-style: none;
+	width: 200px;
+	height: 145px;
+	border: 1px solid #000;
+}
+
+.btn_reset {
+	height: 30px;
+	width: 100px;
+	margin: 10px 0 0 65px;
+}
